@@ -142,6 +142,10 @@ body {
     font-size: 16px;
 }
 
+.riwi-logo img { 
+    max-width: 100px;
+}
+
 .search-container {
     flex: 1;
     max-width: 448px;
@@ -214,7 +218,15 @@ body {
     justify-content: center;
     color: white;
     font-size: 16px;
+    cursor: pointer; /* 👉 se nota que es clickeable */
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
+.user-avatar:hover {
+    background-color: var(--streaming-accent-hover);
+    transform: scale(1.05); /* 👉 animación ligera */
+}
+
 
 /* Main Content */
 .main-content {
@@ -435,6 +447,7 @@ body {
     background-color: hsla(0, 0%, 0%, 0.2);
     display: flex;
     align-items: center;
+    
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -510,6 +523,19 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+.modal-content {
+    background-color: var(--card); 
+    color: var(--streaming-text-primary); 
+    border-radius: 16px;
+}
+
+.btn-w100 {
+    background-color: var(--streaming-accent); 
+    color: white;
+    border-radius: 6px;
+    padding: 0 16px;
 }
 
 /* Responsive Design */
